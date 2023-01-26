@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Задание 1
+      let num1 = Number(prompt("Введите первую цифру"));
+      let num2 = Number(prompt("Введите вторую цифру"));
+      console.log(num1 <= 1 ? "Первая цифра = или < 1" : "Первая цифра > 1");
+      console.log(num2 >= 3 ? "Вторая цифра = или > 3" : "Вторая цифра < 3");
+
+      //Задание 2
+      let test = true;
+      console.log(test === true ? "+++" : "---");
+
+      //Задание 3
+      let day = Number(prompt("Введите число"));
+      if (day <= 10) {
+        alert("Число попадает в первую декаду");
+      } else if ((day > 10) & (day <= 20)) {
+        alert("Число попадает во вторую декаду");
+      } else {
+        alert("Число попадает в третью декаду");
+      }
+      //Задание 4
+      let number = Number(prompt("Введите число"));
+      let hundreds = Math.floor((number / 100) % 10);
+      let dozens = Math.floor((number / 10) % 10);
+      let units = Math.floor(number % 10);
+      alert(
+        `В числе ${number} количество сотен: ${hundreds}, десятков: ${dozens}, единиц: ${units}`
+      );
+    </script>
+  </body>
+</html>
